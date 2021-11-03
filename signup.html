@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+  body {
+      margin: 0;
+      background:whitesmoke;
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 800;
+  }
+  
+  .container {
+      width: 80%;
+     
+      margin: 4 ;
+  }
+  
+  header {
+    background: black;
+    height: 70px;
+  }
+  
+  header::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  
+  .logo {
+    float: left;
+    padding: 5px;
+    padding-top: 0px;
+  }
+  
+  nav {
+    float: right;
+   
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-left: 40px;
+    padding-top: 30px;
+  
+    position: relative;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  nav a:hover {
+    color: white;
+  }
+  #footer{
+      margin: 1px;
+  }
+  h3{
+      color:orange
+  }
+  
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+          <h1 class="logo"><img  src="img/logo.PNG" height="40px"
+            width="130px" ></h1>
+    
+          <nav>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="login.html">LOG IN</a></li>
+              <li><a href="signup.html">SIGN UP</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <h2>Sign up</h2>
+      <h3>Your basic info</h3>
+      <form action="home.html">
+        &emsp;&emsp;Username:&emsp;&emsp;<input type="text" id="txtUser" name="txtUser" required ><br><br>
+        &emsp;&emsp;Email:&emsp;&emsp;&emsp;&emsp;<input type="text" id="txtEmail" name="txtEmail" required ><br><br>
+        &emsp;&emsp;Password:&emsp;&emsp;<input type="password" id="txtPass" name="txtPass" required ><br><br>
+        &emsp;&emsp;<label for="">Age:</label><br>
+        &emsp;&emsp;<input type="radio" name="rdage" id="rdun" checked value="Under18">Under 18<br>
+        &emsp;&emsp;<input type="radio" name="rdage" id="rdold" checked value="18old">18 or older<br>
+        <h3>Your profile</h3>
+        &emsp;&emsp;Biography:&emsp;&emsp;<input type="text" id="txtBio" name="txtBio" required ><br><br>
+        &emsp;&emsp;Job Role:<br>
+        &emsp;&emsp;<select id="job" name="user_job">
+
+            <optgroup label="Web">
+                <option value="webb">Web Designer</option>
+                <option value="wordpress">WordPress Designer</option>
+                <option value="rail">Rails Deveploer</option>
+                <option value="python">Python Developer</option>
+                <option value="php">PHP Developer</option>
+                <option value="fron">Frontend Developer</option>
+            </optgroup>
+            <optgroup label="Mobile">
+                <option value="ios">IOS Developer</option>
+                <option value="android">Android Developer</option>
+                <option value="mobi">Mobile Designer</option>
+            </optgroup>
+            
+           
+            <optgroup label="Business">
+                <option value="owner">Business Owner</option>
+                <option value="freelandcer">Freelancer</option>
+            </optgroup>
+            <optgroup label="Other">
+                <option value="sec">Secretary</option>
+                <option value="main">Maintanance</option>
+            </optgroup>
+            
+        </select><br><br>
+        &emsp;&emsp;<input type="submit" value="Sign up" name="btnOK">
+        &emsp;<input type="reset" value="Reset">
+    </form>
+      <br>
+     <p id ="footer"text align=center ><i>Copyright ©2018 By ABC Group</i></p>
+</body>
+</html>
