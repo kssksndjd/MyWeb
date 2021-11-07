@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        h2{
+            color:green;
+        }
+        
+        fieldset{
+            width:40%;
+            background-color: LightSeaGreen	;
+        }
+    </style>
+</head>
+<body>
+    
+    <fieldset>
+    <form action="" name="formLOG" id="formLOG" onsubmit="checkLogin()" >
+        <h2>Enter details of your account</h2>
+        <hr >
+        &emsp;&emsp;First name:&emsp;&emsp;<input type="text" id="txtUser" name="txtUser" required ><br><br>
+        &emsp;&emsp;Last name:&emsp;&emsp;&emsp;&emsp;<input type="text" id="txtln" name="txtln" required ><br><br>
+        &emsp;&emsp;Email:&emsp;&emsp;&emsp;&emsp;<input type="text" id="txtEmail" name="txtEmail" required ><br><br>
+        &emsp;&emsp;Age:&emsp;&emsp;<select name="age">
+            <option value= "18">18</option>
+            <option value= "19">19</option>
+            <option value= "20">20</option>
+            <option value= "21">21</option>
+            <option value= "22">22</option>
+            <option value= "23">23</option>
+            <option value= "24">24</option>
+            <option value= "25">25</option>
+            <option value= "26">26</option>
+            <option value= "27">27</option>
+            <option value= "28">28</option>
+            <option value= "29">29</option>
+            <option value= "30">30</option>
+            
+
+        </select>
+        <br><br>
+        &emsp;&emsp; Are you employed: &emsp;&emsp;
+        <input type="checkbox" name="s1" value="Yes" checked>Yes
+        <input type="checkbox" name="s2" value="No" >No
+       <hr>
+        <input type="submit" value="Login">
+        <input type="reset" value="Reset">
+    </form> 
+    </fieldset>
+
+
+<script>
+    function checkLogin(){
+        
+        var uid= formLOG.txtUser.value;
+        var pwd= formLOG.txtln.value;
+        if(uid!="Aptech"||pwd!="FPT"){
+            alert("Invalid account")
+        }else{
+            alert("Login Succesful")
+        }
+    }
+</script>
+</body>
+</html>
